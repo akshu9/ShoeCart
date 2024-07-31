@@ -21,6 +21,7 @@ function AppContent() {
         <Route path='/' element={<Homepage />} />
         <Route path='/cart' element={<CartItem query={query} IsCart={false} />} />
         <Route path='/cartItem' element={<CartItem query={query} IsCart={true} />} />
+        <Route path='*' element={<div>404: Page Not Found</div>} />
       </Routes>
       {location.pathname !== '/cartItem' && <FooterBar />}
     </>
