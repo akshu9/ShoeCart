@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      <Suspense fallback={<div className='text-center font-bold text-3xl m-60'>Loading...</div>}>
+      <Suspense fallback={<div className='text-center text-3xl font-bold mt-60'>Loading...</div>}>
         <Navbar setQuery={setQuery} />
         <Routes>
           <Route path='/' element={<Homepage />} />
