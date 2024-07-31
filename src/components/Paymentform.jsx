@@ -48,7 +48,7 @@ const Paymentform = ({ onClose }) => {
         <div className="mb-4">
           <label className="block text-gray-700">Card Number</label>
           <input
-            type="text"
+            type="number"
             name="cardNumber"
             value={formData.cardNumber}
             onChange={handleChange}
@@ -61,7 +61,7 @@ const Paymentform = ({ onClose }) => {
         <div className="mb-4">
           <label className="block text-gray-700">Expiration Date</label>
           <input
-            type="text"
+            type="number"
             name="expiryDate"
             value={formData.expiryDate}
             onChange={handleChange}
@@ -74,7 +74,7 @@ const Paymentform = ({ onClose }) => {
         <div className="mb-4">
           <label className="block text-gray-700">CVV</label>
           <input
-            type="text"
+            type="number"
             name="cvv"
             value={formData.cvv}
             onChange={handleChange}
