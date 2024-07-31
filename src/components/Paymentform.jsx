@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Paymentform = ({ onPaymentSuccess }) => {
+const Paymentform = ({ onClose }) => {
   const [formData, setFormData] = useState({
     cardNumber: '',
     expiryDate: '',
@@ -20,13 +20,16 @@ const Paymentform = ({ onPaymentSuccess }) => {
     e.preventDefault();
     console.log('Payment Information:', formData);
     alert('Payment Submitted');
+    onClose()  // Close the form after submission
     // Here you would typically send the formData to your server or payment processor
-    onPaymentSuccess();
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <form onSubmit={handleSubmit} className="relative max-w-md w-full p-2 bg-white shadow-md rounded-lg">
+        <button type="button" onClick={onClose} className="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+          X
+        </button>
         <h2 className="text-xl mb-4">Payment Information</h2>
         
         <div className="mb-4">

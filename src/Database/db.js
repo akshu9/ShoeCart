@@ -332,18 +332,7 @@ const data = [
       color: "black",
       category: "heels",
     },
-    {
-      id:2000,
-      img: "https://m.media-amazon.com/images/I/71yhoZP0l6L._AC_UY695_.jpg",
-      title: "Wedding Prom Bridal",
-      // star: <AiFillStar className="rating-star" />,
-      reviews: "(123 reviews)",
-      prevPrice: "$140,00",
-      newPrice: "50",
-      company: "Adidas",
-      color: "black",
-      category: "flats",
-    },
+    
   ];
   
   export default data;

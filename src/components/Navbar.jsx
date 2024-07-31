@@ -15,9 +15,9 @@ function Navbar({ query, setQuery }) {
         dispatch(toggletheme());
     };
 
-    useEffect(() => {
-        document.body.className = theme;
-    }, [theme]);
+    // useEffect(() => {
+    //     document.body.className = theme;
+    // }, [theme]);
 
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const total = cart.reduce((total, item) => total + item.quantity, 0);
@@ -54,9 +54,9 @@ function Navbar({ query, setQuery }) {
                         className='m-4 border rounded border-black px-2'
                         placeholder='Search'
                     />
-                    <li onClick={themehandle} className='cursor-pointer m-4'>
+                    {/* <li onClick={themehandle} className='cursor-pointer m-4'>
                         {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
-                    </li>
+                    </li> */}
                     <FaUserCircle className='m-4' size={24} />
                 </ul>
             </div>

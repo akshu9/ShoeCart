@@ -18,7 +18,7 @@ function Cart({ id, img, title, company, color, quantity, IsCart,newPrice }) {
   };
 
   return (
-    <div className='mx-7 my-3'>
+    <div className='mx-4 my-3'>
     <div className=' h-80 w-56  rounded-lg m-4 border  inline-block shadow-xl'>
       <img src={img} alt={title} className="h-32 w-full p-7 rounded-lg bg-slate-50" />
       <h4 className=' font-sans text-center'>{title}</h4>
