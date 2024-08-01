@@ -13,7 +13,7 @@ const slice=createSlice({
 
             }
             else{
-            console.log(action.payload)
+           // console.log(action.payload)
             state.push({...action.payload, quantity:1})
         }},
         removeFromCart(state,action){

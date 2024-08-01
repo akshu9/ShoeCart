@@ -18,7 +18,7 @@ const Paymentform = ({ onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Payment Information:', formData);
+   // console.log('Payment Information:', formData);
     alert('Payment Submitted');
     onClose()  // Close the form after submission
     // Here you would typically send the formData to your server or payment processor
